@@ -1,0 +1,485 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+.black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.black-overlay {
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+i {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+body {
+  background-image: url("assets/images/image1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  padding: 0.5rem 1rem;
+}
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+
+label {
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.small-line {
+  display: block;
+  margin: 2rem auto;
+  width: 5rem;
+  height: 5px;
+  background-color: #24b7a4;
+}
+
+.main-container {
+  position: relative;
+  z-index: 2;
+}
+
+#a1 {
+  padding: 4rem 0;
+}
+#a1 > .wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+@media (min-width: 2560px) {
+  #a1 > .wrapper {
+    width: 70%;
+  }
+}
+#a1 > .wrapper .top-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+#a1 > .wrapper .top-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+#a1 > .wrapper .top-section p {
+  font-size: 1.5rem;
+}
+#a1 > .wrapper .timer-section {
+  margin: 4rem 0 6rem;
+  width: 100%;
+}
+#a1 > .wrapper .timer-section > .wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#a1 > .wrapper .timer-section > .wrapper .box {
+  margin-right: 2rem;
+  padding: 2rem;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+@media (max-width: 575px) {
+  #a1 > .wrapper .timer-section > .wrapper .box {
+    padding: 1rem;
+  }
+}
+#a1 > .wrapper .timer-section > .wrapper .box:last-child {
+  margin-right: 0;
+}
+#a1 > .wrapper .timer-section > .wrapper .box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#a1 > .wrapper .timexpire-text {
+  width: 100%;
+  margin: 4rem 0;
+  display: none;
+}
+#a1 > .wrapper .timexpire-text h3 {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#a1 > .wrapper .bottom-section {
+  width: 100%;
+}
+#a1 > .wrapper .bottom-section > .wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  #a1 > .wrapper .bottom-section > .wrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #a1 > .wrapper .bottom-section > .wrapper {
+    width: 60%;
+  }
+}
+#a1 > .wrapper .bottom-section > .wrapper p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+#a1 > .wrapper .bottom-section > .wrapper form {
+  width: 100%;
+  margin: 0 auto 3rem;
+}
+@media (min-width: 768px) {
+  #a1 > .wrapper .bottom-section > .wrapper form {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #a1 > .wrapper .bottom-section > .wrapper form {
+    width: 60%;
+  }
+}
+@media (min-width: 2560px) {
+  #a1 > .wrapper .bottom-section > .wrapper form {
+    width: 30%;
+  }
+}
+#a1 > .wrapper .bottom-section > .wrapper form button {
+  display: block;
+  margin: auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #24b7a4;
+  color: #fff;
+  text-transform: capitalize;
+}
+#a1 > .wrapper .bottom-section > .wrapper .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#a1 > .wrapper .bottom-section > .wrapper .icon-wrapper .box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0s;
+}
+#a1 > .wrapper .bottom-section > .wrapper .icon-wrapper .box:hover {
+  background-color: #24b7a4;
+  border: 1px solid #24b7a4;
+}
+#a1 > .wrapper .bottom-section > .wrapper .icon-wrapper .box i {
+  font-size: 1.1rem;
+}
+
+#a2 {
+  padding: 4rem 0;
+}
+#a2 > .wrapper {
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 2560px) {
+  #a2 > .wrapper {
+    width: 70%;
+  }
+}
+#a2 > .wrapper .top-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#a2 > .wrapper .top-section h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#a2 > .wrapper .bottom-section > .wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#a2 > .wrapper .bottom-section > .wrapper .box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 3rem;
+}
+@media (min-width: 768px) {
+  #a2 > .wrapper .bottom-section > .wrapper .box {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  #a2 > .wrapper .bottom-section > .wrapper .box {
+    width: 30%;
+  }
+}
+#a2 > .wrapper .bottom-section > .wrapper .box i {
+  font-size: 3rem;
+}
+#a2 > .wrapper .bottom-section > .wrapper .box h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+#a2 > .wrapper .bottom-section > .wrapper .box p {
+  line-height: 1.5rem;
+}
+
+#a3 {
+  padding: 3rem 0;
+}
+#a3 > .wrapper {
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 2560px) {
+  #a3 > .wrapper {
+    width: 70%;
+  }
+}
+#a3 > .wrapper .top-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#a3 > .wrapper .top-section h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#a3 > .wrapper .bottom-section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#a3 > .wrapper .bottom-section .left-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  #a3 > .wrapper .bottom-section .left-section {
+    width: 60%;
+    margin: 0 auto 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  #a3 > .wrapper .bottom-section .left-section {
+    width: 38%;
+  }
+}
+#a3 > .wrapper .bottom-section .left-section .box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#a3 > .wrapper .bottom-section .left-section .box .icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #d5fff9;
+  color: #24b7a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#a3 > .wrapper .bottom-section .left-section .box .icon-wrapper i {
+  font-size: 1.2rem;
+}
+#a3 > .wrapper .bottom-section .left-section .box .info-wrapper {
+  margin-left: 1rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+}
+#a3 > .wrapper .bottom-section .left-section .box .info-wrapper h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+#a3 > .wrapper .bottom-section .left-section .box .info-wrapper p {
+  font-size: 0.9rem;
+}
+#a3 > .wrapper .bottom-section .right-section {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #a3 > .wrapper .bottom-section .right-section {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  #a3 > .wrapper .bottom-section .right-section {
+    width: 58%;
+  }
+}
+@media (min-width: 2560px) {
+  #a3 > .wrapper .bottom-section .right-section {
+    width: 40%;
+  }
+}
+#a3 > .wrapper .bottom-section .right-section form {
+  padding: 3rem 2rem;
+  background: transparent;
+  border-top: 3px solid #24b7a4;
+  border-bottom: 3px solid #24b7a4;
+  position: relative;
+}
+#a3 > .wrapper .bottom-section .right-section form .wrapper {
+  position: relative;
+  z-index: 2;
+}
+#a3 > .wrapper .bottom-section .right-section form .wrapper button {
+  display: block;
+  margin: 2rem auto 0;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #24b7a4;
+  padding: 0.8rem 1.2rem;
+}
+
+#a4 {
+  padding: 2rem 0;
+  position: relative;
+}
+#a4 > .wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#a4 > .wrapper p:first-child {
+  margin-bottom: 1rem;
+}
+#a4 > .wrapper p:last-child span {
+  color: #24b7a4;
+}
+
+/*# sourceMappingURL=styles.css.map */
